@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerador de senhas">
+    <link rel="icon" href="./image/favicon-32x32.png" type="image/x-icon">
+    <title>Gerador de senhas fortes</title>
+</head>
+
+<body>
+
+    <h1>🔒 </h1>
+    <h1>Gerador de senhas</h1>
+
+    <main class="container-input">
+        <span>Quantidade de <span id="valor"></span> caracteres desejados </span>
+        <input id='slider' class="slider" type="range" min="5" max="40" value="15">
+
+        <button id="button" class="button-cta" onclick="generatePassword()">Gerar senha</button>
+    </main>
+
+    <div id="container-password" onclick="copiarSenha()" class="container-password hide">
+        <span class="title">Sua senha é:</span>
+        <span id="password" class="password"></span>
+        <span class="aviso-copiar">Clique na senha para copiar</span>
+    </div>
+
+</body>
+
+</html>
